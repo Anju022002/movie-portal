@@ -1,0 +1,15 @@
+<h1>Latest Films</h1>
+
+{% if latest_films %}
+<ul>
+{% for film in latest_films %}
+<li>
+<a href="{% url 'films:film_detail' film.id %}">
+{{ film.title }}
+</a>
+</li>
+{% endfor %}
+</ul>
+{% else %}
+<p>No films available.</p>
+{% endif %}
