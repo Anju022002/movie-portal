@@ -30,6 +30,8 @@ ALLOWED_HOSTS = [
     "127.0.0.1",
 ]
 
+ALLOWED_HOSTS = ['*']
+
 CSRF_TRUSTED_ORIGINS = [
     "https://0c265260a3e54252b8b0244d2cd610ae.vfs.cloud9.us-east-1.amazonaws.com"
 ]
