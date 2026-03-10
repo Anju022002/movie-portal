@@ -31,9 +31,7 @@ ALLOWED_HOSTS = [
     "127.0.0.1",
 ]
 
-ALLOWED_HOSTS = [
-    "cinema-core-env.eba-er7f9ske.us-east-1.elasticbeanstalk.com"
-]
+ALLOWED_HOSTS = ['*']
 
 CSRF_TRUSTED_ORIGINS = [
     "https://0c265260a3e54252b8b0244d2cd610ae.vfs.cloud9.us-east-1.amazonaws.com"
@@ -63,6 +61,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
 ]
 
 ROOT_URLCONF = 'cinema_core.urls'
